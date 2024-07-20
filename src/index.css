@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.under{
+  border-bottom: 1px solid black;
+}
+.searchbar {
+
+  border-right: none;
+
+  outline: none;
+}
+.searchbutton {
+  
+  border: 2px solid #ccc;
+ 
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  
+ 
+  outline: none;
+}
