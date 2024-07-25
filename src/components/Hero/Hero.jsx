@@ -69,7 +69,7 @@ const Hero = () => {
   //ADDING MOVIE TO WATCHLIST
 
   const addMovie = (item) => {
-    if (user && exist && exist.watchList) {
+    if (user && currentUser && exist && exist.watchList) {
       const itemExists =
         exist.watchList &&
         exist.watchList.some((obj) => obj.imdbID === item.imdbID);
