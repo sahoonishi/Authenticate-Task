@@ -4,10 +4,7 @@ import { MdDelete } from "react-icons/md";
 import { UserContext } from "../../Context/Context";
 import { useNavigate } from "react-router-dom";
 
-
-
 const WatchList = () => {
-
   const navigate = useNavigate();
   const [page, setPage] = useState(1);
   const { userEmail } = useContext(UserContext);
@@ -19,13 +16,7 @@ const WatchList = () => {
 
   const [show, setShow] = useState(newArray);
 
-
-
-
   //  DELETE MOVIE FROM LIST
-
-
-
 
   const deleteMovie = (id) => {
     if (user && exist && exist.watchList) {
@@ -47,12 +38,7 @@ const WatchList = () => {
     }
   };
 
-
-
   // PAGINATION FUNCTION
-
-
-
 
   const pageHandler = (selectedpage) => {
     if (
@@ -67,6 +53,7 @@ const WatchList = () => {
     <Layout>
       <div className="bottom-container flex justify-center flex-wrap gap-4 m-4 md:m-10">
         {currentUser &&
+          show &&
           show.slice(page * 5 - 5, page * 5).map((item, index) => {
             const { Title } = item;
             return (
