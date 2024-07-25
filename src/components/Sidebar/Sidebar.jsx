@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
 
-  
+
   // GETTING DATA FROM LOCAL STORAGE 
 
 
@@ -63,7 +63,7 @@ const Sidebar = () => {
           ) : (
             <Link
               to="/loginpage"
-              className="flex justify-center sm:justify-center items-center gap-4 text-xs md:text-lg  bg-blue-600 text-white   w-full rounded-md sm:p-2 p-3 hover:scale-95 transition-all"
+              className="flex justify-center sm:justify-center items-center gap-4 text-xs md:text-lg  bg-blue-500 text-white   w-full rounded-md sm:p-2 p-3 hover:scale-95 transition-all"
             >
               Login
             </Link>

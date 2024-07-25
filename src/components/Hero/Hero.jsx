@@ -17,7 +17,7 @@ const Hero = () => {
   const currentUser = localStorage.getItem("currentUser");
   const [movie, setMovie] = useState("");
   const [data, setData] = useState([]);
-  const api = "http://www.omdbapi.com/";
+  const api = "https://www.omdbapi.com/";
 
 
   // Getting data from API
@@ -76,7 +76,7 @@ const Hero = () => {
   //ADDING MOVIE TO WATCHLIST
 
 
-  
+
 
   const addMovie = (item) => {
     if (user && exist && exist.watchList) {
