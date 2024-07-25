@@ -7,7 +7,7 @@ const ProductInfo = () => {
   const [moviesDetails, setMoviesDetails] = useState([]);
   const { id } = useParams();
 
-  const api = "http://www.omdbapi.com/";
+  const api = "https://www.omdbapi.com/";
 
   const callData = async (id) => {
     try {
