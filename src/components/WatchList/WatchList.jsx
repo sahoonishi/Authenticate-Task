@@ -100,7 +100,7 @@ const WatchList = () => {
             );
           })}
       </div>
-      {show.length > 0 && (
+      {currentUser && show && show.length > 0 && (
         <div className="flex  justify-center mb-6">
           <div className="flex  justify-center  w-60 sm:w-full mt-4 gap-2 sm:gap-4 text-xl items-center">
             <span
