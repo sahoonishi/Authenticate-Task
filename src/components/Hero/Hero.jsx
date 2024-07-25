@@ -9,9 +9,7 @@ const Hero = () => {
   const navigate = useNavigate();
   const { userEmail } = useContext(UserContext);
 
-
   // Loading data from local storage when the component mounts
-
 
   const user = JSON.parse(localStorage.getItem("alwaysData"));
   const currentUser = localStorage.getItem("currentUser");
@@ -19,10 +17,7 @@ const Hero = () => {
   const [data, setData] = useState([]);
   const api = "https://www.omdbapi.com/";
 
-
   // Getting data from API
-
-
 
   const callData = async (movie) => {
     if (movie.trim() === "") {
@@ -71,12 +66,7 @@ const Hero = () => {
   let exist = userEmail && user.find((obj) => obj.userEmail === userEmail);
   const [show, setShow] = useState(exist.watchList);
 
-
-
   //ADDING MOVIE TO WATCHLIST
-
-
-
 
   const addMovie = (item) => {
     if (user && exist && exist.watchList) {
@@ -144,7 +134,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="bottom-container flex justify-center flex-wrap gap-6 mt-6">
-        {data ? (
+        {data &&
           data.map((item, index) => {
             const { Title } = item;
             return (
@@ -179,10 +169,7 @@ const Hero = () => {
                 )}
               </div>
             );
-          })
-        ) : (
-          <h1>hiiii</h1>
-        )}
+          })}
       </div>
     </div>
   );
