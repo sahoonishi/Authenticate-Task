@@ -26,7 +26,7 @@ const Sidebar = () => {
 
   return (
     <div className="w-2/6 sm:w-1/5   border border-gray-400 max-h-screen sticky top-0 left-0">
-      <h2 className="text-center text-sm sm:text-2xl text-blue-500 font-bold mt-5">
+      <h2 className="text-center text-xl sm:text-2xl text-blue-500 font-bold mt-5">
         WatchLists
       </h2>
       <div className="mt-2 flex flex-wrap justify-start sm:justify-between flex-col h-[500px]    items-center  ">
